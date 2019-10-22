@@ -1,0 +1,107 @@
+#carrusel-signos .carousel-inner img{
+    height: 100vh;
+    object-fit: cover;
+}
+#carrusel-signos{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 20px;
+}
+
+.carousel-indicators{
+    margin-left: 10%;
+    justify-content: flex-start;
+}
+
+/*.texto-intro{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+       
+}*/
+.padre-texto{
+    display: flex; 
+    justify-content: center; /*cuando direction es column centra vertical*/
+                             /*cuando direction es row centra horizontal*/
+    align-items: center; /*cuando direction es column centra horizontal*/
+                         /*cuando direction es row centra vertical*/
+    position: absolute;
+    height: 100vh;
+}
+.texto{
+    text-align: center;
+    background: #00000066;
+    padding: 20px;
+    z-index: 11;
+    font-family: 'miFuente';
+    color: white; 
+}
+
+.texto h2{
+    font-size: 50px;
+}
+.texto p{
+    font-size: 30px;
+}
+
+.scroll_please {
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-family: 'miFuente';
+    bottom: 20px;
+    font-size: 15px;
+    z-index: 3;
+    text-align: center;
+    padding-top: 30px;
+    background-image: url(../img/Iconos/scroll.png);
+    background-repeat: no-repeat;
+    background-size: 50px 35px;
+    background-position: top;
+}
+
+/* Por debajo de 700px */
+    @media screen and (max-width: 700px){
+        .texto h2{
+            font-size: 35px;
+        }
+        .texto p{
+            font-size: 25px;
+        }
+        .scroll_please{
+            padding-bottom: 30px;
+        }
+        .carousel-indicators{
+            margin: auto;
+            justify-content: center;
+        }
+    }
+        /* Por debajo de 400px */
+    @media screen and (max-width: 400px){
+        .texto h2{
+            font-size: 30px;
+        }
+        .texto p{
+            font-size: 20px;
+        }
+        .scroll_please{
+            padding-bottom: 30px;
+        }
+        .carousel-indicators{
+            margin: auto;
+            justify-content: center;
+        }
+    }

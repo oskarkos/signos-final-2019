@@ -1,0 +1,29 @@
+.footer{
+    height: 66px;
+    background-color: black; 
+    position: relative;
+}
+.footer i{
+    color: white !important;
+}
+
+.derechos{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: 'miFuente';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.derechos li{
+    display: inline;
+    padding: 0 10px;
+}
+.derechos ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+

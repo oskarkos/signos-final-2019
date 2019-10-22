@@ -1,0 +1,59 @@
+@font-face{
+    font-family: 'miFuente';
+    src: url(../fonts/Square721_Cn_BT_Roman.ttf);
+}
+#header{
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 66.28px;
+}
+
+#header img {
+    width: 110px;
+    transition: all 0.5s ease-in-out;
+}
+
+#header a{
+    font-family: 'miFuente';
+    font-size: 20px;
+    color: white;
+    transition: all 500ms ease;
+    margin-right: 5px;
+}
+.navbar{
+    background: #00000073;
+}
+
+.play-reel{
+    color: #29ABE2 !important;
+}
+
+.play-logo{
+    color: #29ABE2 !important;
+    padding: 5px;
+}
+.nav-link:hover{
+    letter-spacing: 0.1em;
+}
+#header img:hover{
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+.menu-icon{
+    color: white;  
+    transition: all 500ms ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+.menu-icon:hover{
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}

@@ -1,0 +1,47 @@
+.contacto{
+    background: #f0f0f0;
+    font-family: 'miFuente';
+    text-align: center;
+    justify-content: center;
+    color: #29ABE2;
+    vertical-align: middle;
+    padding-bottom: 24px;
+}
+
+.contactitle{
+    font-family: 'miFuente';
+    color: #29ABE2 !important;
+    padding-top: 24px;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.contact{
+    padding: 0;
+}
+
+.contacto h3{
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 30px;
+}
+
+.contacto p{
+    margin: 0;
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+.tel:hover, .mail:hover{
+    letter-spacing: 0.2em;
+}
+
+.tel, .mail, .direccion{
+    transition: all 0.5s ease-in-out;
+}
+.direccion:hover{
+    letter-spacing: 0.07em;
+}
+
+

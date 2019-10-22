@@ -1,0 +1,147 @@
+@font-face{
+    font-family: 'miFuente';
+    src: url(../fonts/Square721_Cn_BT_Roman.ttf);
+}
+body{
+    overflow : hidden; overflow-y : scroll; 
+    overflow : -moz-scrollbars-vertical;
+
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #29ABE2;
+    position: fixed;
+    z-index: 200;
+    box-shadow: 0px 2px 3px  rgba(109, 108, 108, 0.431);
+    display: flex;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+}
+#miembro{
+    color: white;
+    font-family: 'miFuente';
+    margin: 0;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.fa-bars{
+    font-size: 40px;
+    position: relative;
+    margin-top: 10px;
+    left: 10px;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms;
+    padding: 2px;
+    cursor: pointer;
+}
+.fa-bars:hover{
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+.fa-user-circle{
+    font-size: 40px;
+    color: white;
+}
+.fa-angle-down{
+    font-size: 60px;
+    color: white;
+    padding-right: 20px;
+    margin-right: 20px
+}
+.icono-peque{
+    color:#29ABE2;
+    vertical-align: text-top;
+    margin: 2px;
+}
+
+.line{
+    margin-top: 30px;
+    padding: 12px;
+    transition: all 300ms;
+
+}
+.line:hover{
+    background: #00000073;
+    cursor: pointer;
+    color: #29ABE2;
+}
+.line label{
+    color: white;
+    font-size: 25px;
+}
+
+.line font{
+    position: absolute;
+    margin-left: 25px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 150;
+    font-family: 'miFuente';
+}
+.line label:hover{
+    cursor: pointer;
+}
+
+.line font:hover{
+    cursor: pointer;
+}
+
+/*Side Bar*/
+
+#sidebar-wrapper{
+    z-index: 1;
+    position: fixed;
+    width: 54px;
+    padding-top: 60px;
+    height: 100%;
+    overflow-y: hidden;
+    background: #29ABE2;
+    overflow-x : hidden; 
+    transition: all 300ms;
+}
+
+/*Main Content*/
+
+#page-content-wrapper{
+    width: 100%;
+    position: absolute;
+    padding-top: 60px;
+    padding-left: 54px;
+    transition: all 300ms;
+}
+
+/*change de width of sidebar when display*/
+
+#wrapper.menu-displayed #sidebar-wrapper{
+    width: 175px;
+    transition: all 300ms;
+}
+
+#wrapper.menu-displayed #page-content-wrapper{
+    padding-left: 175px;
+    transition: all 300ms;
+}
+
+/*side bar styling*/
+
+.sidebar-nav{
+    padding: 0;
+    list-style: none;
+
+}
+
+.sidebar-nav li{
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a{
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}

@@ -1,0 +1,151 @@
+.imagen-seleccion img{
+    padding: 10px;
+    object-fit: cover;
+}
+.contenedor ul li:hover{
+    cursor: pointer;
+}
+.contenedor ul{
+    padding: 0;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+}
+.contenedor ul li span{
+    font-size: 22px;
+}
+.contenedor ul li{
+    list-style: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 35px;
+    margin: 5px;
+    text-align: center;
+    
+}
+.padre-centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-seleccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed gray;
+    height: auto;
+}
+.imagen-seleccion img{
+    width: 480px;
+}
+.editar-icon{
+    background: #29A745;
+    color: white;
+}
+.eliminar-icon{
+    background: rgb(180, 45, 41);
+    color: white;
+}
+#nupro{
+    font-family: 'miFuente';
+    color: white;
+    font-size: 21px;
+    padding: 10px;
+    margin: 0;
+}
+.divisionpro{
+    background: #0071BC;
+}
+
+.col-lg-4{
+    padding: 0;
+}
+.producciones{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.boton-card{
+    border: 0;
+    padding:0;
+    box-shadow: none;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow:hidden;
+}
+
+.contenedor div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'miFuente';
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.contenedor:hover div.centrado{
+    padding: 10px 30px;
+    letter-spacing: 0.2em;
+}
+.contenedor img{
+    transition: all 0.5s ease-in-out;
+    width:100%;
+}
+.contenedor:hover img{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+    filter: blur(3px);
+}
+.letras-oscuras{
+    color: black !important;
+    border: 2px solid black !important;
+}
+.completa{
+    width: 100%;
+}
+.edicion-titulo{
+    background: #0071BC;
+}
+.edicion-titulo p{
+    color: white;
+    font-size: 20px;
+    font-family: 'miFuente';
+    text-align: center;
+}
+.imagen-editar{
+    padding: 10px;
+    border: 1px dashed gray;
+}
+.editar-articulo{
+    border: 1px solid rgba(185, 184, 184, 0.89);
+    text-align: center;
+}
+.imagen-editar{
+    width: 480px;
+    position: relative;
+}
+.borrar-img{
+    color: white;
+    background-color: red;
+    position: absolute;
+    margin-left: -27px;
+    margin-top: 11px;
+}
+.borrar-img:hover{
+    cursor: pointer;
+}
+#subirNuevaFoto{
+    padding: 10px;
+    border: 1px dashed gray;
+}

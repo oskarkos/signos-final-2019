@@ -1,0 +1,130 @@
+.teamtitle{
+    font-family: 'miFuente';
+    color: #29ABE2 !important;
+    padding-top: 24px;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.team-area{
+    display: flex;
+    min-height: 600px;
+    font-family: 'miFuente';
+    flex-wrap: wrap;
+}
+.card-team{
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    width: calc(266px*2);
+    height: 266px;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+.card-team .imgBx {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.card-team:hover {
+    box-shadow: 0 5px 15px 2px #29ABE260;
+}
+
+.card-team .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.card .details{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .details .content{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .details .content h2{
+    margin: 0;
+    padding:  0;
+    font-size: 28px;
+    line-height: 0.85em;
+    font-weight: 600;
+}
+
+.card .details .content h2 span{
+    font-size: 18px;
+    color: #29ABE2;
+
+}
+
+.card .details .content ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.card .details .content ul li{
+    list-style: none;
+    margin-left: 2px;
+}
+
+.card .details .content ul li a{
+    color: white;
+    border: none;
+}
+
+.card .details .content ul li:nth-child(1) a{
+    background: #3b5995;
+}
+.card .details .content ul li:nth-child(2) a{
+    background: #29ABE2;
+}
+
+.card .details .content a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: 2px solid #29ABE2;
+    color: #29ABE2;
+    font-weight: 500;
+}
+
+.card .details .content a:hover{
+    background: #29ABE2;
+    color: white;
+}
+
+@media (max-width: 576px){
+    .card-team{
+        width: 266px;
+        height: 466px;
+    }
+    .card .imgBx{
+        width: 100%;
+        height: 266px
+    }
+    .card .details{
+        position: relative;
+        width: 264px;
+        height: 200px;
+        margin-top: 266px;
+    }
+    .card .details{
+        background: white;
+    }
+}
