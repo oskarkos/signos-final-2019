@@ -63,7 +63,7 @@ class GestorProducciones{
                     },
                     function(isConfirm){
                         if(isConfirm){
-                            window.location = "producciones";
+                            window.location = "?action=producciones";
                     }
                 });
                 
@@ -129,7 +129,7 @@ class GestorProducciones{
                 },
                 function(isConfirm){
                     if(isConfirm){
-                        window.location = "producciones";
+                        window.location = "?action=producciones";
                 }
             });
 
@@ -189,7 +189,7 @@ class GestorProducciones{
                     },
                     function(isConfirm){
                         if(isConfirm){
-                            window.location = "producciones";
+                            window.location = "?action=producciones";
                     }
                 });
 

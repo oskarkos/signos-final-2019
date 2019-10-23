@@ -91,7 +91,7 @@ $("#milista").on("drop", function (e) {
                         },
                         function(isConfirm){
                             if(isConfirm){
-                                window.location = "edicionSlide";
+                                window.location = "?action=edicionSlide";
                         }
                     });
                 }
@@ -142,7 +142,7 @@ $('.eliminarSlide').click(function(){
                 },
                 function(isConfirm){
                     if(isConfirm){
-                        window.location = "edicionSlide";
+                        window.location = "?action=edicionSlide";
                 }
             });
             
@@ -210,7 +210,7 @@ $("#guardarSlide").click(function(){
                     },
                     function(isConfirm){
                         if(isConfirm){
-                            window.location = "edicionSlide";
+                            window.location = "?action=edicionSlide";
                     }
                 });
             }

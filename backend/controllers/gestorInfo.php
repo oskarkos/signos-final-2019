@@ -14,8 +14,8 @@ class GestorInfo{
                         <a>
                     </ul>
                     <img src="'.$item["link"].'" class="img-fluid" alt="">
-                    <h3>'.$item["titulo"].'</h3>
-                    <p>'.$item["contenido"].'</p>
+                    <h3>'.utf8_encode($item["titulo"]).'</h3>
+                    <p>'.utf8_encode($item["contenido"]).'</p>
                 </div>';
         }
     }
@@ -45,7 +45,7 @@ class GestorInfo{
                     },
                     function(isConfirm){
                         if(isConfirm){
-                            window.location = "info";
+                            window.location = "?action=info";
                     }
                 });
 

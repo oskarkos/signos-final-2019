@@ -3,4 +3,4 @@
 session_start();
 session_destroy();
 
-echo "<script>window.location = 'ingreso'</script>";
+echo "<script>window.location = '?action=ingreso'</script>";

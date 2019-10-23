@@ -9,7 +9,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#"><i class="fas fa-edit icono-peque"></i>  Editar Perfil</a>
           <a class="dropdown-item" href="#"><i class="fas fa-file-alt icono-peque"></i>    Terminos y Condiciones</a>
-          <a class="dropdown-item" href="salir"><i class="fas fa-times icono-peque"></i>  Salir</a>
+          <a class="dropdown-item" href="?action=salir"><i class="fas fa-times icono-peque"></i>  Salir</a>
     </div>
 </header>
 
@@ -17,11 +17,11 @@
 
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-        <a href="menuInicio"><div class="line"><label class="lnr lnr-home"><font>Home</font></label></div></a>
-        <a href="edicionSlide"><div class="line"><label class="lnr lnr-picture"><font>Imagenes</font></label></div></a>
+        <a href="?action=menuInicio"><div class="line"><label class="lnr lnr-home"><font>Home</font></label></div></a>
+        <a href="?action=edicionSlide"><div class="line"><label class="lnr lnr-picture"><font>Imagenes</font></label></div></a>
         <a href=""><div class="line"><label class="lnr lnr-frame-expand"><font>Carrusel</font></label></div></a>
-        <a href="producciones"><div class="line"><label class="lnr lnr-file-empty"><font>Entradas</font></label></div></a>
-        <a href="info"><div class="line"><label class="lnr lnr-users"><font>About Us</font></label></div></a>
+        <a href="?action=producciones"><div class="line"><label class="lnr lnr-file-empty"><font>Entradas</font></label></div></a>
+        <a href="?action=info"><div class="line"><label class="lnr lnr-users"><font>About Us</font></label></div></a>
         <a href="../index.php" target="_blank"><div class="line"><label class="lnr lnr-enter-down"><font>Ver Sitio</font></label></div></a>
     </ul>
 </div>

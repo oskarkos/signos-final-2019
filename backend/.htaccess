@@ -3,5 +3,6 @@ Options All -Indexes
 #URL Amigables
 
 RewriteEngine on
+RewriteBase /
 
 RewriteRule ^(\w+)$ index.php?action=$1

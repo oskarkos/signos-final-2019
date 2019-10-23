@@ -71,7 +71,7 @@ $("#guardarInfo").click(function(){
                     },
                     function(isConfirm){
                         if(isConfirm){
-                            window.location = "info";
+                            window.location = "?action=info";
                     }
                 });
             }

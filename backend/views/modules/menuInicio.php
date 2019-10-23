@@ -18,7 +18,7 @@
             </div></a>
         </div>
         <div class="col-lg-3 col-md-6 col-xs-12 mt-4 mb-4">
-            <a href="edicionSlide"><div class="card iconos-principal">
+            <a href="?action=edicionSlide"><div class="card iconos-principal">
                 <img src="views/images/icons/slider.svg" class="card-img img-responsive cube" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title text-center titulos-iconos">Slider</h5>
@@ -26,7 +26,7 @@
             </div></a>
         </div>
         <div class="col-lg-3 col-md-6 col-xs-12 mt-4 mb-4">
-            <a href="producciones"><div class="card iconos-principal">
+            <a href="?action=producciones"><div class="card iconos-principal">
                 <img src="views/images/icons/iamges.svg" class="card-img img-responsive cube" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title text-center titulos-iconos">produccines</h5>
@@ -34,7 +34,7 @@
             </div></a>
         </div>
         <div class="col-lg-3 col-md-6 col-xs-12 mt-4 mb-4">
-            <a href="info"><div class="card iconos-principal">
+            <a href="?action=info"><div class="card iconos-principal">
                 <img src="views/images/icons/users-group.svg" class="card-img img-responsive cube" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title text-center titulos-iconos">About Us</h5>

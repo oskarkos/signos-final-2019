@@ -1,6 +1,6 @@
 <?php
     if(!$_SESSION["validar"]){
-        echo "<script>window.location = 'ingreso'</script>";
+        echo "<script>window.location = '?action=ingreso'</script>";
         exit();
     }
 

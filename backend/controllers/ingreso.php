@@ -29,7 +29,7 @@ class Ingreso{
                         $_SESSION["validar"] = true;
                         $_SESSION["usuario"] = $usuarioActual;
 
-                        echo "<script>window.location = 'menuInicio'</script>";
+                        echo "<script>window.location = '?action=menuInicio'</script>";
                         
                     }else{
 
