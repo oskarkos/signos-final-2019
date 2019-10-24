@@ -6,7 +6,7 @@ class GestorInfoModel{
 
     public function mostrarInfoModel($tabla){
         $conn = Conexion::conectar();
-        $stmt = $conn->prepare("SELECT * FROM $tabla ORDER BY orden ASC");
+        $stmt = $conn->prepare("SELECT id, titulo, link, contenido FROM $tabla ORDER BY orden ASC");
 
         $stmt->execute();
 

@@ -22,7 +22,7 @@ class GestorInfo{
 
     public function editarInfoController(){
 
-        if(isset($_POST["contenidoEditarInfo"])){
+        if(isset($_POST["idInfo"])){
 
             $datosController = [
                 'idInfo' => $_POST["idInfo"],
@@ -76,7 +76,7 @@ class GestorInfo{
                 },
                 function(isConfirm){
                     if(isConfirm){
-                        window.location = "info";
+                        window.location = "?action=info";
                 }
             });
 

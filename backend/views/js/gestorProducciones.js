@@ -71,8 +71,6 @@ $("#subirFoto").change(function(){
 
 
 $(".editar-icon").click(function(){
-
-    
         
     idArticulo = $(this).parent().parent().attr("id");
     rutaImagen = $("#"+idArticulo).find("img").attr("src");
