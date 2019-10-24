@@ -26,8 +26,8 @@ class GestorInfo{
 
             $datosController = [
                 'idInfo' => $_POST["idInfo"],
-                'tituloInfo' => $_POST["editarTituloInfo"],
-                'contenidoInfo' => $_POST["contenidoEditarInfo"],
+                'tituloInfo' => utf8_decode($_POST["editarTituloInfo"]),
+                'contenidoInfo' => utf8_decode($_POST["contenidoEditarInfo"]),
                 'linkInfo' => $_POST["editarLinkInfo"],
             ];
             
