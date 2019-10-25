@@ -32,8 +32,6 @@
 }*/
 .padre-texto{
     display: flex; 
-    justify-content: center; /*cuando direction es column centra vertical*/
-                             /*cuando direction es row centra horizontal*/
     align-items: center; /*cuando direction es column centra horizontal*/
                          /*cuando direction es row centra vertical*/
     position: absolute;
@@ -46,6 +44,7 @@
     z-index: 11;
     font-family: 'miFuente';
     color: white; 
+    width: 75%;
 }
 
 .texto h2{
@@ -73,6 +72,12 @@
     background-position: top;
 }
 
+    @media screen and (max-width: 1300px){
+        .texto{ 
+            width: 100%;
+        }
+    }
+
 /* Por debajo de 700px */
     @media screen and (max-width: 700px){
         .texto h2{
@@ -87,6 +92,9 @@
         .carousel-indicators{
             margin: auto;
             justify-content: center;
+        }
+        .texto{ 
+            width: 100%;
         }
     }
         /* Por debajo de 400px */
@@ -103,5 +111,8 @@
         .carousel-indicators{
             margin: auto;
             justify-content: center;
+        }
+        .texto{ 
+            width: 100%;
         }
     }

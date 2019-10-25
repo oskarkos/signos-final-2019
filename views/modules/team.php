@@ -10,7 +10,7 @@
                     <div class="content">
                     <h2>Oscar Arcos<br><span>CEO Signos</span></h2>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/oscar-arcos">In</a>  <strong>Linked In</strong></li>
+                        <li><a href="https://www.linkedin.com/in/oscar-arcos" target="_blank">In</a>  <strong>Linked In</strong></li>
                     </ul>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                     <div class="content">
                     <h2>Jairo Arcos<br><span>Director de producción</span></h2>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/jairo-arcos-04001949">In</a>  <strong>Linked In</strong></li>
+                        <li><a href="https://www.linkedin.com/in/jairo-arcos-04001949" target="_blank">In</a>  <strong>Linked In</strong></li>
                     </ul>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     <div class="content">
                         <h2>Jose Arcos<br><span>Director de Innovación</span></h2>
                         <ul>
-                        <li><a href="https://www.linkedin.com/in/josearkos">In</a>  <strong>Linked In</strong></li>
+                        <li><a href="https://www.linkedin.com/in/josearkos" target="_blank">In</a>  <strong>Linked In</strong></li>
                         </ul>
                     </div>
                     </div>
@@ -56,7 +56,7 @@
                     <div class="content">
                         <h2>Libia Rodriguez<br><span>Directora Adm. y Financiera</span></h2>
                         <ul>
-                        <li><a href="https://www.linkedin.com/in/yanet-rodríguez">In</a>  <strong>Linked In</strong></li>
+                        <li><a href="https://www.linkedin.com/in/yanet-rodríguez" target="_blank">In</a>  <strong>Linked In</strong></li>
                         </ul>
                     </div>
                     </div>
@@ -72,7 +72,7 @@
                         <div class="content">
                         <h2>Olga Molina<br><span>Directora de Recursos Humanos</span></h2>
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/olga-lucia-molina-bernal">In</a>  <strong>Linked In</strong></li>
+                            <li><a href="https://www.linkedin.com/in/olga-lucia-molina-bernal" target="_blank">In</a>  <strong>Linked In</strong></li>
                         </ul>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
             <div class="col-lg-12 col-xl-6">
                 <div class="card card-team">
                     <div class="imgBx">
-                        <img src="views/img/Team/NidiaRincon.jpg" class="img-fluid" alt="NidiaRincon image">
+                        <img src="views/img/Team/NidiaRincon.jpg" class="img-fluid" alt="NidiaRincon image" target="_blank">
                     </div>
                     <div class="details">
                         <div class="content">
