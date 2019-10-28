@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="views/css/estilosInicio.css">
     <link rel="stylesheet" href="views/css/estilos.css">
     <link rel="stylesheet" href="views/css/estilosProducciones.css">
+    <link rel="shortcut icon" type="image/png" href="views/images/Logo/logo_ojo.png"/>
     <link rel="stylesheet" href="views/css/estilosAbout.css">
     <link rel="stylesheet" href="views/css/sweetalert.css">
     <title>Signos Administración</title>

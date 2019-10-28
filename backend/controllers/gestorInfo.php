@@ -11,7 +11,7 @@ class GestorInfo{
                         <li class="editarli"><i class="fas fa-edit"></i></li>
                         <a href="index.php?action=info&idBorrarInfo='.$item["id"].'">
                             <li class="eliminarli"><i class="fas fa-times"></i></li>
-                        <a>
+                        </a>
                     </ul>
                     <img src="'.$item["link"].'" class="img-fluid" alt="">
                     <h3>'.utf8_encode($item["titulo"]).'</h3>
@@ -38,7 +38,7 @@ class GestorInfo{
                 
                 swal({
                     title: "OK!",
-                    text: "La Inofrmacion se actualizado correctamente!",
+                    text: "La Informacion se actualizado correctamente!",
                     type: "success",
                     confirmButtonText:"Cerrar",
                     closeOnConfirm: false

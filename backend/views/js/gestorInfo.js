@@ -1,7 +1,7 @@
 // editar info
 
 $(".editarli").click(function(){
-    idInfo = $(this).parent().parent().parent().attr("id");
+    idInfo = $(this).parent().parent().attr("id");
     linkimagen = $("#"+idInfo).find("img").attr("src");
     titulo = $("#"+idInfo).find("h3").html();
     contenido = $("#"+idInfo).find("p").html();
