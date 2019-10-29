@@ -13,9 +13,8 @@ class GestorSlide{
             $ruta = "../../views/images/carrusel/slide".$fecha.".jpg";
             
             $origen = imagecreatefromjpeg($datos["imagenTemporal"]);
-            $destino = imagecrop($origen, ["x"=>0, "y"=>0, "width"=>1280, "height"=>720]);
 
-            imagejpeg($destino, $ruta);
+            imagejpeg($origen, $ruta);
             
             GestorSlideModel::subirImagenSlideModel($ruta, "slide");
             

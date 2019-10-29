@@ -37,9 +37,6 @@ class Ingreso{
                 if($resp['success']) {
                 //Captcha correcto
                 $intentos = 0;
-                } else {
-                //Captcha incorrecto
-                echo 'esta incorrecto el captchin';
                 }
 
                 if($intentos < $maximoIntentos){

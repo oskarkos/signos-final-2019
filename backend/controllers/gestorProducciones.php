@@ -14,9 +14,8 @@ class GestorProducciones{
             $ruta = "../../views/images/productos/temp/produccion".$fecha.".jpg";
 
             $origen = imagecreatefromjpeg($datos);
-            $destino = imagecrop($origen, ["x"=>0, "y"=>0, "width"=>1280, "height"=>720]);
 
-            imagejpeg($destino, $ruta);
+            imagejpeg($origen, $ruta);
 
             echo $ruta;
 
@@ -151,9 +150,8 @@ class GestorProducciones{
                 $ruta = "views/images/productos/produccion".$fecha.".jpg";
 
                 $origen = imagecreatefromjpeg($imagen);
-                $destino = imagecrop($origen, ["x"=>0, "y"=>0, "width"=>1280, "height"=>720]);
 
-                imagejpeg($destino, $ruta);
+                imagejpeg($origen, $ruta);
 
                 $borrar = glob("views/images/productos/temp/*");
 

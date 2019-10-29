@@ -46,7 +46,7 @@ $("#subirFoto").change(function(){
             contentType: false,
             processData: false,
             beforeSend: function () {
-                $("#imagenArt").before('<img src="views/images/status.gif" id="status">');
+                $("#imagenArt").before('<img src="views/images/loading.gif" id="status">');
             },
             success: function(respuesta){
 
@@ -91,7 +91,7 @@ $(".editar-icon").click(function(){
         $(this).hide();
         $("#subirNuevaFoto").show();
         $("#nuevaFoto").html("");
-
+        
         $("#subirNuevaFoto").attr("name", "editarImagen");
         $("#subirNuevaFoto").attr("required", true);
 
@@ -127,7 +127,7 @@ $(".editar-icon").click(function(){
                     contentType: false,
                     processData: false,
                     beforeSend: function () {
-                        $("#nuevaFoto").html('<img src="views/images/status.gif" id="status">');
+                        $("#nuevaFoto").html('<img src="views/images/loading.gif" id="status">');
                     },
                     success: function(respuesta){
         

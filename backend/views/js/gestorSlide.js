@@ -48,7 +48,6 @@ $("#milista").on("drop", function (e) {
 
     //Validar tipo de la imagen
     var imagenType = imagen.type;
-    console.log('respuesta', imagenType);
     if (imagenType == "image/jpeg" || imagenType == "image/png") {
         $(".alerta").remove();
     } else {
@@ -68,7 +67,7 @@ $("#milista").on("drop", function (e) {
             processData: false,
             dataType:"json",
             beforeSend: function () {
-                $(".seccion-editar").before('<img src="views/images/status.gif" id="status">');
+                $(".seccion-editar").before('<img src="views/images/loading.gif" id="status">');
             },
             success: function(respuesta){
 
@@ -116,7 +115,6 @@ $('.eliminarSlide').click(function(){
     idSlide = $(this).parent().attr("id");
     rutaSlide = $(this).attr("ruta");
 
-    console.log('slide#', idSlide);
     $(this).parent().remove();
 
     var borrarItem = new FormData();
@@ -131,8 +129,6 @@ $('.eliminarSlide').click(function(){
         contentType: false,
         processData: false,
         success: function(respuesta){
-            
-            console.log('respuesta', respuesta);
             swal({
                 title: "OK!",
                 text: "La imagen se Elimino correctamente",
@@ -189,9 +185,6 @@ $("#guardarSlide").click(function(){
         var actualizarOrden = new FormData();
         actualizarOrden.append("actualizarOrdenSlide", almacenarOrdenId[i]);
         actualizarOrden.append("actualizarOrdenItem", ordenItem[i]);
-
-        console.log('orden', ordenItem[i]);
-        console.log('almacenarOrdenId', almacenarOrdenId[i]);
 
         $.ajax({
             url: "views/Ajax/gestorSlide.php",
