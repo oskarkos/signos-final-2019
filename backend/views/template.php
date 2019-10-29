@@ -1,7 +1,7 @@
 <?php
     session_start();
 ?>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -26,7 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </head>
 <body>
     <div id="wrapper">

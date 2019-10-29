@@ -47,7 +47,7 @@
                             </div>
                             <button type="submit" class="btn btn-outline-primary" value="Enviar"><i class="fas fa-sign-in-alt"></i>   Inicia sesión</button>                    
                             <div class="col-12 pb-3 pt-2">
-                                <a href="">¿Olvidaste tu contraseña?</a>
+                                <a href=""></a>
                             </div>
                         </div>
                     </form>

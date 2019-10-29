@@ -50,6 +50,12 @@ body{
 .cruz:hover{
     cursor: pointer;
 }
+.captcha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
