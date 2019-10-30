@@ -66,6 +66,7 @@ $("#subirFoto").change(function(){
     }
 })
 
+
 //editar Articulo
 
 
@@ -76,9 +77,9 @@ $(".editar-icon").click(function(){
     rutaImagen = $("#"+idArticulo).find("img").attr("src");
     titulo = $("#"+idArticulo).find(".centrado").html();
     link = $("#"+idArticulo).find("input").val();
-    
+    color = $("#"+idArticulo).find(".colorLetra").val();
 
-    $("#editarArticulo").html('<form method="POST" enctype="multipart/form-data"><div class="container edicion-titulo mt-3"><p>Editar producción </p></div><div class="container editar-articulo pt-3 mb-3"><input type="file" style="display:none" id="subirNuevaFoto" class="btn btn-default mb-3"><div id="nuevaFoto"><img class="img-fluid mb-3 imagen-editar alt="Responsive image" src="'+rutaImagen+'" alt="" srcset=""><span class="lnr lnr-cross borrar-img cambiarImagen"></span></div><input name="editarTitulo" class="form-control mb-3" type="text" placeholder="Título" value="'+titulo+'"><input class="form-control type="text" placeholder="Link" name="editarLink" value="'+link+'"><div class="custom-control custom-checkbox my-1 mb-3 mr-sm-2"></div><button type="submit" class="btn btn-primary mb-3"><i class="fas fa-save"></i>   Guardar</button></div><input type="hidden" name="id" value="'+idArticulo+'"><input type="hidden" name="fotoAntigua" value="'+rutaImagen+'"><form>');
+    $("#editarArticulo").html('<form method="POST" enctype="multipart/form-data"><div class="container edicion-titulo mt-3"><p>Editar producción </p></div><div class="container editar-articulo pt-3 mb-3"><input type="file" style="display:none" id="subirNuevaFoto" class="btn btn-default mb-3"><div id="nuevaFoto"><img class="img-fluid mb-3 imagen-editar alt="Responsive image" src="'+rutaImagen+'" alt="" srcset=""><span class="lnr lnr-cross borrar-img cambiarImagen"></span></div><input name="editarTitulo" class="form-control mb-3" type="text" placeholder="Título" value="'+titulo+'"><input class="form-control mb-3" type="text" placeholder="Link" name="editarLink" value="'+link+'"><select name="editarColor" class=" from-group custom-select"><option selected>'+color+'</option><option value="Blanco">Blanco</option><option value="Negro">Negro</option></select><button type="submit" class="btn btn-primary mb-3 mt-3"><i class="fas fa-save"></i>   Guardar</button></div><input type="hidden" name="id" value="'+idArticulo+'"><input type="hidden" name="fotoAntigua" value="'+rutaImagen+'"><form>');
 
         $('html, body').animate({
             // #elemento2 · Será el elemento donde queremos desplazarnos.

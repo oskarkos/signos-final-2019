@@ -40,7 +40,12 @@
         <div class="form-group">
             <input name="linkProduccion" type="text" class="form-control" id="" placeholder="Link de la Producción" required>
         </div>
-        <div class="padre-centrar">
+        <select name="colorProduccion" class=" from-group custom-select">
+            <option selected>Selecciona el color de la Letra deseado</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Negro">Negro</option>
+        </select>
+        <div class="padre-centrar pt-3">
             <button type="submit" class="btn btn-primary mb-3"><i class="fas fa-save"></i>   Guardar</button>
         </div>             
     </form>

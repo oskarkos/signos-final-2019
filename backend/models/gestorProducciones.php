@@ -6,11 +6,12 @@ class GestorProduccionesModel{
 
     public function guardarProduccionesModel($datosModel, $tabla){
         $conn = Conexion::conectar();
-        $stmt = $conn->prepare("INSERT INTO $tabla (titulo, link, ruta) VALUES (:titulo, :link, :ruta)");
+        $stmt = $conn->prepare("INSERT INTO $tabla (titulo, link, ruta, color) VALUES (:titulo, :link, :ruta, :color)");
 
         $stmt -> bindParam(":titulo", $datosModel["titulo"], PDO::PARAM_STR);
         $stmt -> bindParam(":ruta", $datosModel["ruta"], PDO::PARAM_STR);
-        $stmt -> bindParam(":link", $datosModel["link"], PDO::PARAM_STR);   
+        $stmt -> bindParam(":link", $datosModel["link"], PDO::PARAM_STR);
+        $stmt -> bindParam(":color", $datosModel["color"], PDO::PARAM_STR);    
         
         if($stmt->execute()){
 
@@ -28,7 +29,7 @@ class GestorProduccionesModel{
     public function mostrarProduccionesModel($tabla){
         
             $conn = Conexion::conectar();
-            $stmt = $conn->prepare("SELECT id, titulo, ruta, link FROM $tabla ORDER BY orden ASC");
+            $stmt = $conn->prepare("SELECT id, titulo, ruta, link, color FROM $tabla ORDER BY id ASC");
     
             $stmt->execute();
     
@@ -57,12 +58,13 @@ class GestorProduccionesModel{
 
     public function editarProduccionesModel($datosModel, $tabla){
       $conn = Conexion::conectar();
-      $stmt = $conn->prepare("UPDATE $tabla SET titulo=:titulo, link=:link, ruta=:ruta WHERE id=:id");
+      $stmt = $conn->prepare("UPDATE $tabla SET titulo=:titulo, link=:link, ruta=:ruta, color=:color WHERE id=:id");
 
       $stmt -> bindParam(":id", $datosModel["id"], PDO::PARAM_INT);
       $stmt -> bindParam(":titulo", $datosModel["titulo"], PDO::PARAM_STR);
       $stmt -> bindParam(":link", $datosModel["link"], PDO::PARAM_STR);
       $stmt -> bindParam(":ruta", $datosModel["ruta"], PDO::PARAM_STR);
+      $stmt -> bindParam(":color", $datosModel["color"], PDO::PARAM_STR);
       
 
       if($stmt->execute()){

@@ -39,14 +39,14 @@ class GestorProducciones{
             $ruta = "views/images/productos/produccion".$fecha.".jpg";
 
             $origen = imagecreatefromjpeg($imagen);
-            $destino = imagecrop($origen, ["x"=>0, "y"=>0, "width"=>1280, "height"=>720]);
 
-            imagejpeg($destino, $ruta);
+            imagejpeg($origen, $ruta);
 
             $datosController = [
                 'titulo' => $_POST["tituloProduccion"],
                 'ruta' => $ruta,
-                'link' => $_POST["linkProduccion"]
+                'link' => $_POST["linkProduccion"],
+                'color' => $_POST["colorProduccion"]
             ];
 
             $respuesta = GestorProduccionesModel::guardarProduccionesModel($datosController, "producciones");
@@ -77,10 +77,12 @@ class GestorProducciones{
         $respuesta = GestorProduccionesModel::mostrarProduccionesModel("producciones");
 
         foreach($respuesta as $row => $item){
-            echo '<div class="col-lg-4 col-md-6 col-sm-12 contenedor mover-pro" id="'.$item["id"].'">
+            if($item["color"] == "Blanco"){
+                echo '<div class="col-lg-4 col-md-6 col-sm-12 contenedor mover-pro" id="'.$item["id"].'">
                     <button type="button" class="btn btn-primary boton-card" data-toggle="modal" data-target="#movie-'.$item["id"].'">
                     <img src="'.$item["ruta"].'" class="img-fluid imagen-pro" alt="Responsive image" alt="">
                     <input type="hidden" value="'.$item["link"].'">
+                    <input type="hidden" class="colorLetra" value="'.$item["color"].'">
                     <div class="centrado">'.$item["titulo"].'</div>
                     </button>
                     <ul class="pade-centrar">
@@ -106,6 +108,38 @@ class GestorProducciones{
     
                 $("#movie-'.$item["id"].'").on("hidden.bs.modal", function (e) { $("#movie-'.$item["id"].' iframe").attr("src", ""); });
             </script>';
+            }else{
+                echo '<div class="col-lg-4 col-md-6 col-sm-12 contenedor mover-pro" id="'.$item["id"].'">
+                    <button type="button" class="btn btn-primary boton-card" data-toggle="modal" data-target="#movie-'.$item["id"].'">
+                    <img src="'.$item["ruta"].'" class="img-fluid imagen-pro" alt="Responsive image" alt="">
+                    <input type="hidden" value="'.$item["link"].'">
+                    <input type="hidden" class="colorLetra" value="'.$item["color"].'">
+                    <div class="centrado" style="color:black; border: 2px solid black">'.$item["titulo"].'</div>
+                    </button>
+                    <ul class="pade-centrar">
+                        <li class="editar-icon"><span><i class="fas fa-edit"></i></span></li>    
+                        <a href="index.php?action=producciones&idBorrar='.$item["id"].'&rutaImg='.$item["ruta"].'">
+                            <li class="eliminar-icon"><span><i class="fas fa-times"></i></span></li>
+                        </a>
+                    </ul>                      
+                </div>
+                
+            <div id="movie-'.$item["id"].'" class="modal fade" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content"> 
+                        <div class="embed-responsive embed-responsive-4by3 z-depth-1-half"> 
+                            <iframe id="'.$item["id"].'screen" src="" frameborder="0" allowfullscreen></iframe>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+            
+            <script>
+                $("#'.$item["id"].'").click(function(){ var theLink = "'.$item["link"].'?rel=0&color=white"; document.getElementById("'.$item["id"].'screen").src = theLink; }); 
+    
+                $("#movie-'.$item["id"].'").on("hidden.bs.modal", function (e) { $("#movie-'.$item["id"].' iframe").attr("src", ""); });
+            </script>';
+            }
         }
     }
     public function borrarArticuloController(){
@@ -171,6 +205,7 @@ class GestorProducciones{
                 'titulo' => $_POST["editarTitulo"],
                 'ruta' => $ruta,
                 'link' => $_POST["editarLink"],
+                'color' => $_POST["editarColor"]
             ];
             
             $respuesta = GestorProduccionesModel::editarProduccionesModel($datosController, "producciones");

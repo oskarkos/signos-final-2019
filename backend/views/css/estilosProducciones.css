@@ -107,10 +107,7 @@
     transform:scale(1.25);
     filter: blur(3px);
 }
-.letras-oscuras{
-    color: black !important;
-    border: 2px solid black !important;
-}
+
 .completa{
     width: 100%;
 }

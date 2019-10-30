@@ -7,7 +7,7 @@ class ProduccionesModel{
     public function seleccionarProduccionesModel($tabla){
 
         $conn = Conexion::conectar();
-            $stmt = $conn->prepare("SELECT id, titulo, ruta, link FROM $tabla ORDER BY orden ASC");
+            $stmt = $conn->prepare("SELECT id, titulo, ruta, link, color FROM $tabla ORDER BY id ASC");
     
             $stmt->execute();
     
