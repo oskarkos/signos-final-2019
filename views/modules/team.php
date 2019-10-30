@@ -85,7 +85,7 @@
                     </div>
                     <div class="details">
                         <div class="content">
-                        <h2>Nidya Rincón<br><span>Coordinadora de Proyectos</span></h2>
+                        <h2>Nidya Rincón<br><span>Directora de Ventas</span></h2>
                         <ul>
                             <li><a href="https://www.linkedin.com/in/nidya-rincón">In</a>  <strong>Linked In</strong></li>
                         </ul>
