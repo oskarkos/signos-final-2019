@@ -14,8 +14,22 @@
         <p>info@signos.com.co</p>
     </div>
     <div class="col-lg-6 col-xl-6 direccion">
-        <h3>Addresses:</h3>
+        <h3>Address:</h3>
         <p>Carrera 14A No. 2A-08 San Pablo, Zipaquirá, Cundinamarca - Colombia</p>
     </div>
     </div>
 </div>
+
+<script>
+
+$(".direccion").css({
+    "cursor":"pointer"
+});
+
+$(".direccion").click(function(e) { 
+    e.preventDefault(); 
+    var tab = window.open('https://g.page/SignosStudio?share', '_blank'); 
+    if(tab){ tab.focus();}
+});
+
+</script>

@@ -104,7 +104,7 @@ class GestorProducciones{
             </div>
             
             <script>
-                $("#'.$item["id"].'").click(function(){ var theLink = "'.$item["link"].'?rel=0&color=white"; document.getElementById("'.$item["id"].'screen").src = theLink; }); 
+                $("#'.$item["id"].'").click(function(){ var theLink = "'.$item["link"].'?rel=0&color=white&autoplay=1"; document.getElementById("'.$item["id"].'screen").src = theLink; }); 
     
                 $("#movie-'.$item["id"].'").on("hidden.bs.modal", function (e) { $("#movie-'.$item["id"].' iframe").attr("src", ""); });
             </script>';
@@ -135,7 +135,7 @@ class GestorProducciones{
             </div>
             
             <script>
-                $("#'.$item["id"].'").click(function(){ var theLink = "'.$item["link"].'?rel=0&color=white"; document.getElementById("'.$item["id"].'screen").src = theLink; }); 
+                $("#'.$item["id"].'").click(function(){ var theLink = "'.$item["link"].'?rel=0&color=white&autoplay=1"; document.getElementById("'.$item["id"].'screen").src = theLink; }); 
     
                 $("#movie-'.$item["id"].'").on("hidden.bs.modal", function (e) { $("#movie-'.$item["id"].' iframe").attr("src", ""); });
             </script>';

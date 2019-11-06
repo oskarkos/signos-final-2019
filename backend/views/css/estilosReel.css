@@ -1,0 +1,45 @@
+.reel{
+    display: flex; 
+    justify-content: center; /*cuando direction es column centra vertical*/
+                             /*cuando direction es row centra horizontal*/
+    align-items: center; /*cuando direction es column centra horizontal*/
+                         /*cuando direction es row centra vertical*/
+    height: 120px;
+}
+.boton-reel{
+    font-family: 'miFuente';
+    font-size: 20px;
+    color: #29ABE2;
+    background-color: white;
+    border-color: #29ABE2;
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+}
+.boton-reel i{
+    transition: all 0.5s ease-in-out;
+}
+.boton-reel:hover{
+    letter-spacing: 0.2em;
+    color: #29ABE2;
+    background-color: white;
+    border-color: #29ABE2;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.boton-reel:hover i{
+    color: #29ABE2;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.btn-primary:focus{
+    box-shadow: none;
+}
+.logosignos{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}

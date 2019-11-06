@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="views/css/AboutUs.css">
     <link rel="stylesheet" href="views/css/TeamEstilos.css">
     <link rel="stylesheet" href="views/css/ContactoEstilos.css">
+    <link rel="stylesheet" href="views/css/PartnersEstilos.css">
     <link rel="shortcut icon" type="image/png" href="views/img/Logos/logo_ojo.png"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="views/js/smooth-scroll.min.js"></script>
@@ -51,6 +52,10 @@
       <?php include "modules/aboutus.php"; ?>
     <!-- Fin About Us  -->
 
+    <!-- Partners  -->
+    <?php include "modules/partners.php"; ?>
+    <!-- Fin Partners  -->
+
     <!-- Team  -->
       <?php include "modules/team.php"; ?>
     <!-- Fin Team  -->
@@ -70,7 +75,6 @@
     
 
          <!-- Optional JavaScript -->
-    <script src="views/js/videos.js"></script>
     <script src="views/js/efectos.js"></script>
 
   </body>

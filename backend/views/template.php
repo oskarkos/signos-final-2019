@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="views/css/estilosInicio.css">
     <link rel="stylesheet" href="views/css/estilos.css">
     <link rel="stylesheet" href="views/css/estilosProducciones.css">
+    <link rel="stylesheet" href="views/css/estilosReel.css">
     <link rel="shortcut icon" type="image/png" href="views/images/Logo/logo_ojo.png"/>
     <link rel="stylesheet" href="views/css/estilosAbout.css">
     <link rel="stylesheet" href="views/css/sweetalert.css">
@@ -41,6 +42,7 @@
     <script src="views/js/gestorSlide.js"></script>
     <script src="views/js/gestorProducciones.js"></script>
     <script src="views/js/gestorInfo.js"></script>
+    <script src="views/js/gestorReel.js"></script>
     
     <script>
         $('#menu-toggle').click(function (e) {

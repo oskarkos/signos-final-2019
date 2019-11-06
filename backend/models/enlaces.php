@@ -7,6 +7,7 @@ class EnlacesModels{
         $enlaces=="edicionSlide" ||
         $enlaces=="producciones" ||
         $enlaces=="info" ||
+        $enlaces=="reel" ||
         $enlaces=="salir"){
             $module="views/modules/".$enlaces.".php";
         }else if("index"){

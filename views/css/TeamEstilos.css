@@ -108,6 +108,9 @@
     background: #29ABE2;
     color: white;
 }
+#leader{
+    background: #f0f0f0;
+}
 
 @media (max-width: 576px){
     .card-team{
