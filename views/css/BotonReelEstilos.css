@@ -14,26 +14,25 @@
     border-color: #29ABE2;
     width: 250px;
     margin: 20px;
-    padding: 15px;
-    border-radius: 0;
+    border-radius: 15px;
     transition: all 0.5s ease-in-out;
 }
 .boton-reel i{
     transition: all 0.5s ease-in-out;
 }
+.boton-reel img{
+    width: 40px;
+    height: 40px;
+}
 .boton-reel:hover{
-    letter-spacing: 0.2em;
+    letter-spacing: 1px;
     color: #29ABE2;
     background-color: white;
     border-color: #29ABE2;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
 }
 
 .boton-reel:hover i{
     color: #29ABE2;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
 }
 .btn-primary:focus{
     box-shadow: none;

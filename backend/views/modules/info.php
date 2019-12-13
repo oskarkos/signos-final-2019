@@ -15,13 +15,13 @@
             <button id="guardarInfo" type="button" class="btn btn-outline-primary btn-sm btn-block azulitoG" style="display:none" >Guardar Orden de Info</button>
         </div>
     
-        <div class="card-columns" id="listaInfo">
+        <div class="row" id="listaInfo">
             <?php
                 $mostrarInfo = new GestorInfo();
                 $mostrarInfo -> mostrarInfoController();
                 $mostrarInfo -> borrarArticuloController();
             ?>
-        </div>         
+        </div>    
     </div>
 
 </section>

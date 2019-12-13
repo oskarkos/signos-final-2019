@@ -29,7 +29,7 @@ class GestorProduccionesModel{
     public function mostrarProduccionesModel($tabla){
         
             $conn = Conexion::conectar();
-            $stmt = $conn->prepare("SELECT id, titulo, ruta, link, color FROM $tabla ORDER BY id ASC");
+            $stmt = $conn->prepare("SELECT id, titulo, ruta, link, color FROM $tabla ORDER BY id DESC");
     
             $stmt->execute();
     

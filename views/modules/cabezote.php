@@ -16,9 +16,10 @@
             <li class="nav-item">
             <a class="nav-link" data-scroll href="#contact">Contact</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link play-reel" data-scroll href="#movieClick"> Play Reel<i class="fas fa-play play-logo"></i></a>
-            </li>
+            <?php
+                $reel = new ReelMenu();
+                $reel -> seleccionarReelMenuController();
+            ?>
         </ul>
         </div>
     </nav>

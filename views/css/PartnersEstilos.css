@@ -1,4 +1,29 @@
-.imagenPartners img{
-/*-webkit-filter: grayscale(100%);
-    filter: grayscale(100%);*/
+#partners{
+    padding-bottom: 70px;
+}
+.partnerCard{
+    width: 210px;
+    margin: 15px;
+    height: 90px;
+}
+.partnerCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 500ms all;
+}
+.partners-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnerCard img:hover{
+    transform: scale(1.3);
+}
+
+@media(max-width: 1199px){
+    .partners-row{
+        justify-content: center;
+    }
 }

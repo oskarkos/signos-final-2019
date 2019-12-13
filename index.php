@@ -8,6 +8,7 @@ require_once "controllers/gestorInfo.php";
 require_once "controllers/gestorProducciones.php";
 require_once "controllers/gestorSlide.php";
 require_once "controllers/template.php";
+require_once "controllers/gestorReelMenu.php";
 require_once "controllers/gestorReel.php";
 
 $template = new TemplateController();

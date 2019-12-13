@@ -55,7 +55,7 @@
                         </div>
                         <div class="details">
                         <div class="content">
-                            <h2>Libia Rodriguez<br><span>Directora Adm. y Financiera</span></h2>
+                            <h2>Libia Rodríguez<br><span>Directora Adm. y Financiera</span></h2>
                             <ul>
                             <li><a href="https://www.linkedin.com/in/yanet-rodríguez" target="_blank">In</a>  <strong>Linked In</strong></li>
                             </ul>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="details">
                             <div class="content">
-                            <h2>Nidya Rincón<br><span>Directora de Ventas</span></h2>
+                            <h2>Nidyan Rincón<br><span>Directora de Ventas</span></h2>
                             <ul>
                                 <li><a href="https://www.linkedin.com/in/nidya-rincón" target="_blank">In</a>  <strong>Linked In</strong></li>
                             </ul>

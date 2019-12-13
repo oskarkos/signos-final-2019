@@ -89,6 +89,7 @@
     padding: 10px 15px;
     letter-spacing: 0.1em;
     transition: all 0.5s ease-in-out;
+    
 }
 
 .contenedor:hover div.centrado{
@@ -148,4 +149,29 @@
 #subirNuevaFoto{
     padding: 10px;
     border: 1px dashed gray;
+}
+.readmore{
+    display:none;
+}
+#showmore{
+    border: 1px solid #29ABE2;
+    background-color: white;
+    border-radius: 0;
+    width: 150px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    color: #29ABE2;
+    font-family: 'miFuente';
+    font-size: 20px;
+}
+#showless{
+    border: 1px solid #29ABE2;
+    border-radius: 0;
+    width: 150px;
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 10px;
+    color: #29ABE2;
+    font-family: 'miFuente';
+    font-size: 20px;
 }

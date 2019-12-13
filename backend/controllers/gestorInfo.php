@@ -1,22 +1,38 @@
 <?php
-
+// eliminar boton por si acaso
+/*<a href="index.php?action=info&idBorrarInfo='.$item["id"].'">
+<li class="eliminarli"><i class="fas fa-times"></i></li>
+</a>*/
 class GestorInfo{
 
     public function mostrarInfoController(){
         $respuesta = GestorInfoModel::mostrarInfoModel("info");
 
         foreach($respuesta as $row => $item){
-            echo '<div class="card cardabout" id="'.$item["id"].'">
-                    <ul class="iconos-edit">
-                        <li class="editarli"><i class="fas fa-edit"></i></li>
-                        <a href="index.php?action=info&idBorrarInfo='.$item["id"].'">
-                            <li class="eliminarli"><i class="fas fa-times"></i></li>
-                        </a>
-                    </ul>
-                    <img src="'.$item["link"].'" class="img-fluid" alt="">
-                    <h3>'.utf8_encode($item["titulo"]).'</h3>
-                    <p>'.utf8_encode($item["contenido"]).'</p>
+            if(!empty($item["link"])){
+                echo '
+                <div class="col-xl-4 col-lg-6 col-sm-12 mt-3 mb-3" id="'.$item["id"].'">
+                    <div class="card cardabout h-100">
+                        <ul class="iconos-edit">
+                            <li class="editarli"><i class="fas fa-edit"></i></li>
+                        </ul>
+                        <img src="'.$item["link"].'" class="img-card" alt="">
+                        <h3>'.utf8_encode($item["titulo"]).'</h3>
+                        <p>'.utf8_encode($item["contenido"]).'</p>
+                    </div>
                 </div>';
+            }else{
+                echo '
+                <div class="col-xl-4 col-lg-6 col-sm-12 mt-3 mb-3" id="'.$item["id"].'">
+                    <div class="card cardabout h-100">   
+                        <ul class="iconos-edit">
+                            <li class="editarli"><i class="fas fa-edit"></i></li>
+                        </ul>
+                        <h3>'.utf8_encode($item["titulo"]).'</h3>
+                        <p>'.utf8_encode($item["contenido"]).'</p>
+                    </div>
+                </div>';
+            }
         }
     }
 

@@ -16,7 +16,7 @@ class Producciones{
                 </div>
                 
             <div id="movie-'.$item["id"].'" class="modal fade" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-xl">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
                     <div class="modal-content"> 
                         <div class="embed-responsive embed-responsive-4by3 z-depth-1-half"> 
                             <iframe id="'.$item["id"].'screen" src="" frameborder="0" allowfullscreen></iframe>
@@ -40,7 +40,7 @@ class Producciones{
                 </div>
                 
             <div id="movie-'.$item["id"].'" class="modal fade" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-xl">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
                     <div class="modal-content"> 
                         <div class="embed-responsive embed-responsive-4by3 z-depth-1-half"> 
                             <iframe id="'.$item["id"].'screen" src="" frameborder="0" allowfullscreen></iframe>
